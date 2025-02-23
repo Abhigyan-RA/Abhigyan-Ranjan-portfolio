@@ -8,10 +8,11 @@ const Contact = () => {
       className="relative w-full flex flex-col items-center justify-center mt-10 py-20 bg-gradient-to-b from-[#0a0a0a] to-[#121212] text-gray-300 overflow-hidden"
     >
       {/* Animated Background Elements */}
-      <div className="absolute top-10 left-10 w-36 h-36 bg-blue-500 opacity-20 blur-3xl rounded-full animate-pulse"></div>
-      <div className="absolute top-20 right-5 w-24 h-24 bg-blue-500 opacity-10 blur-2xl rounded-full animate-bounce-slow"></div>
-      <div className="absolute bottom-20 left-20 w-32 h-32 bg-blue-500 opacity-15 blur-3xl rounded-full animate-spin-slow"></div>
-      <div className="absolute bottom-10 right-10 w-28 h-28 bg-blue-500 opacity-10 blur-3xl rounded-full animate-pulse"></div>
+      <div className="absolute top-10 left-10 w-36 h-36 bg-blue-500 opacity-20 blur-3xl rounded-full animate-pulse pointer-events-none"></div>
+<div className="absolute top-20 right-5 w-24 h-24 bg-blue-500 opacity-10 blur-2xl rounded-full animate-bounce-slow pointer-events-none"></div>
+<div className="absolute bottom-20 left-20 w-32 h-32 bg-blue-500 opacity-15 blur-3xl rounded-full animate-spin-slow pointer-events-none"></div>
+<div className="absolute bottom-10 right-10 w-28 h-28 bg-blue-500 opacity-10 blur-3xl rounded-full animate-pulse pointer-events-none"></div>
+
       
       {/* Header */}
       <h4 className="text-blue-500 text-lg tracking-widest mb-4 uppercase animate-fadeIn">
@@ -31,7 +32,7 @@ const Contact = () => {
       </a>
 
       {/* Social Icons */}
-      <div className="flex items-center justify-center gap-8 mt-12 animate-fadeIn delay-300">
+      <div className="flex z-50 items-center justify-center gap-8 mt-12 animate-fadeIn delay-300">
         <a
           href="mailto:abhigyanranjanofficial@gmail.com"
           target="_blank"
