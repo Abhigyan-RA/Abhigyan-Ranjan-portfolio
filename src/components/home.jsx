@@ -1,44 +1,24 @@
-import React, { useRef, useEffect, useState } from "react";
-import VANTA from "vanta/dist/vanta.net.min"; // You can also try other effects like vanta.waves.min.js
-import * as THREE from "three";
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+// import WaveImage from "../assets/wave.jpg";
 import DisplayImage from "../assets/my2.png";
-
-const VantaBackground = () => {
-  const vantaRef = useRef(null);
-  const [vantaEffect, setVantaEffect] = useState(null);
-
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        VANTA({
-          el: vantaRef.current,
-          THREE: THREE,
-          color: 0xff5722,         
-          backgroundColor: 0x0a192f, 
-          points: 12.0,            
-          maxDistance: 20.0,      
-          spacing: 15.0,          
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
-
-  return <div ref={vantaRef} className="absolute top-0 left-0 w-full h-full" />;
-};
+import  NeuralNetworkBackground from "./neural-animation.jsx";
 
 const Home = () => {
   return (
-    <div id="home" className="relative h-[90vh] w-full overflow-hidden">
-      {/* Vanta Animated Background */}
-      <VantaBackground />
-
+    <div
+      id="home"
+      className="h-[90vh] w-full flex items-start text-white bg-cover bg-center pt-6"
+      // style={{
+      //   backgroundImage: `url(${WaveImage})`,
+      //   opacity: 0.9,
+      //   backgroundAttachment: "fixed",
+      // }}
+    >
+    <NeuralNetworkBackground />
       {/* Content Container */}
-      <div className="relative flex flex-col items-center sm:items-start w-full max-w-4xl px-4 sm:ml-20 md:ml-20 lg:ml-48 ml-0 pt-40 sm:pt-60">
+      <div className="z-10 flex flex-col items-center sm:items-start w-full max-w-4xl px-4 sm:ml-20 md:ml-20 lg:ml-48 ml-0 pt-40 sm:pt-60">
         {/* Social Icons */}
         <div className="flex flex-col items-center sm:ml-40 sm:items-start mb-2">
           <div className="flex gap-4 mb-4 sm:mb-2">
@@ -46,7 +26,7 @@ const Home = () => {
               href="https://github.com/Abhigyan-RA"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-orange-400 text-3xl drop-shadow-lg"
+              className="text-white hover:text-blue-500 text-3xl"
             >
               <FaGithub />
             </a>
@@ -54,7 +34,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/abhigyan-ranjan/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-orange-400 text-3xl drop-shadow-lg"
+              className="text-white hover:text-blue-500 text-3xl"
             >
               <FaLinkedin />
             </a>
@@ -64,7 +44,7 @@ const Home = () => {
         {/* Profile Image and Intro */}
         <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 text-center sm:text-left">
           {/* Profile Image */}
-          <div className="rounded-full overflow-hidden w-24 h-24 sm:w-32 sm:h-32 border-2 border-orange-400">
+          <div className="rounded-full overflow-hidden w-24 h-24 sm:w-32 sm:h-32">
             <img
               src={DisplayImage}
               alt="Profile"
@@ -74,22 +54,17 @@ const Home = () => {
 
           {/* Intro Text */}
           <div>
-            <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white"
-              style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}
-            >
-              Abhigyan Ranjan
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+            Abhigyan Ranjan
             </h1>
-            <p
-              className="text-2xl sm:text-2xl lg:text-4xl mt-2 sm:mt-4 text-gray-300"
-              style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.7)" }}
-            >
-              <span>
+            <p className="text-2xl sm:text-2xl lg:text-4xl mt-2 sm:mt-4">
+              <span style={{ color: "white" }}>
                 <Typewriter
                   words={[
                     "AI/ML Engineer",
                     "Data Scientist",
                     "Software Developer",
+                    // "ML Developer",
                     "Problem Solver",
                   ]}
                   loop={true}
