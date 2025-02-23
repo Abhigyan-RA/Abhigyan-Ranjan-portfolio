@@ -2,27 +2,20 @@ import React, { useEffect, useState } from "react";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 
 const experiences = [
+
   {
-    role: "Frontend Developer Intern",
+    role: "AI/ML intern",
+    location: "Damco Solutions",
+    duration: "February 2025 - Present",
+    description:
+      "Applying advanced machine learning techniques to develop innovative solutions and deliver impactful real-world results.",
+  },
+  {
+    role: "AI & Backend Developer Intern",
     location: "Lagoon",
-    duration: "October 2024 - Present",
+    duration: "October 2024 - January 2025",
     description:
-      "Contributing as the solely intern, primarily responsible for frontend development, creating components with React and Tailwind CSS.",
-  },
-  {
-    role: "Web Developer",
-    location: "Kapliash SSS Pvt. Ltd",
-    duration: "May 2024 - July 2024",
-    description:
-      "Developed, and maintained web applications for NEET and JEE students using HTML, CSS, JavaScript, React.js",
-  },
-   
-  {
-    role: "Web Developer",
-    location: "ISRO(Indian National Space and Aeronautics Agency)",
-    duration: "Aug 2024 - Sept 2024",
-    description:
-      "Developed, and maintained web applications for ISRO by contributing in their all types of websites",
+      "Contributed to Untitled Ventures' Lagoon, a cutting-edge recruiting platform, where I have engineered a scalable filtering system that optimizes candidate searches. By designing and implementing a resume extraction pipeline leveraging Large Language Models (LLMs) and FastAPI, I have achieved a 66.67% reduction in resume processing time. Additionally, I also worked on an advanced filtering system utilizing Node.js and Natural Language Processing (NLP)",
   },
 
 ];

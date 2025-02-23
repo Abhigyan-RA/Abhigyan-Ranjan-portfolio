@@ -45,7 +45,9 @@ const KnowMore = () => {
 
             <div className="relative z-10">
               <p className="text-gray-300 text-sm leading-relaxed hover:text-gray-100 transition duration-300 p-4 rounded-lg md:bg-transparent">
-                Apart from my professional engagements, I love exploring travelling, traveling to undiscovered places, and going to gym. When not coding, you'll find me binge-watching web shows or listening to music.
+              Beyond my professional pursuits, I am driven by a relentless curiosity to explore uncharted territories both in technology and the world around me. My passion for traveling to undiscovered places fuels my creativity, while my dedication to fitness keeps me disciplined and resilient.
+
+When I'm not optimizing algorithms or building scalable AI systems, you’ll find me strategizing my next move on the chessboard or pushing my limits at the gym. My journey in AI/ML is fueled by a desire to push boundaries, from developing transformer models to architecting intelligent systems that redefine possibilities
               </p>
 
               <div className="mt-4">
@@ -53,14 +55,13 @@ const KnowMore = () => {
                 <ul className="text-gray-300 list-decimal marker:text-blue-500 pl-5 text-sm mt-2">
                   <li className="hover:text-gray-100 transition duration-300">Technical Head, Animeverse - Official Anime Society, ADGIPS</li>
                   <li className="hover:text-gray-100 transition duration-300">Served as Technical Head, E-Cell ADGIPS</li>
-                  <li className="hover:text-gray-100 transition duration-300">Founding Enginner, Lagoon</li>
                 </ul>
               </div>
             </div>
 
             <div className="flex gap-4 text-center mt-6">
               <a
-                href="https://github.com/Yash16p"
+                href="https://github.com/Abhigyan-RA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-500 transition duration-300 transform hover:scale-110"
@@ -68,7 +69,7 @@ const KnowMore = () => {
                 <FaGithub size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/yash-pandey-a608501a0/"
+                href="https://www.linkedin.com/in/abhigyan-ranjan/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-500 transition duration-300 transform hover:scale-110"
@@ -76,7 +77,7 @@ const KnowMore = () => {
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="mailto:yashpandey1626@gmail.com"
+                href="mailto:abhigyanranjanofficial@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-500 transition duration-300 transform hover:scale-110"
@@ -96,7 +97,7 @@ const KnowMore = () => {
           <div className="relative group">
             <img
               src={photo}
-              alt="Fun Hobbies"
+              alt="ISRO image"
               className="rounded-lg shadow-lg filter group-hover:blur-0 transition-transform duration-300"
             />
             <div className="absolute inset-0 opacity-30 group-hover:opacity-0 transition-opacity duration-500 rounded-lg"></div>

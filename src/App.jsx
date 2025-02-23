@@ -19,12 +19,12 @@ function App() {
       </h2>
       <Timeline />
       <h1 id="projects" className="text-4xl md:text-5xl text-bg-black font-bold mt-28 lg:ml-36 md:ml-10 sm:ml-10 ml-6  text-white scroll-offset " >
-        Projects
+        Projects & Publications
       </h1>
       <ProjectsGrid />
-      <KnowMore />
+      {/* <KnowMore /> */}
       <Contact />
-      <footer className="mt-4 mb-4 text-center text-gray-400 text-sm flex flex-col items-center">
+      {/* <footer className="mt-4 mb-4 text-center text-gray-400 text-sm flex flex-col items-center">
         <p>
           Developed & Designed with{" "}
           by{" "}
@@ -34,10 +34,10 @@ function App() {
             rel="noopener noreferrer"
             className="font-semibold text-gray-300 text-xs md:text-lg hover:text-blue-500 transition-all duration-300"
           >
-            Yash Pandey
+           Abhigyan Ranjan
           </a>
         </p>
-      </footer>
+      </footer> */}
     </div>
 
   );

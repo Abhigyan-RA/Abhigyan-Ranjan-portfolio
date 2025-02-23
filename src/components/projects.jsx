@@ -1,12 +1,9 @@
 import React from "react";
 
-import image2 from "../assets/shopi.jpg";
-import image3 from "../assets/rooftop.jpg";
-import image4 from "../assets/road.jpg";
-import image5 from "../assets/genai.png";
-import banana from '../assets/ba.png'
-import pi from '../assets/pi.png'
-import travel from '../assets/travel.png'
+import image2 from "../assets/project-4.png";
+import image4 from "../assets/project-3.png";
+import pi from '../assets/project-1.jpg'
+import travel from '../assets/project-2.png'
 
 
 
@@ -25,40 +22,41 @@ const projects = [
 
   {
     id: 2,
-    name: "Clothing Website",
+    name: "Kisan Seva",
     description:
-      "Designed and developed a modern and responsive clothing website, Pineapple.in, showcasing a variety of trendy apparel. This project emphasizes a user-friendly interface, engaging product displays, and seamless navigation to enhance the online shopping experience.",
+      "An innovative app designed to empower farmers with advanced technology. Key features include real-time monitoring of soil conditions, automated irrigation based on machine learning predictions, access to up-to-date agricultural news, a personalized chatbot for farming advice, real-time weather updates, and AI-powered plant disease diagnosis through camera technology. This comprehensive app offers farmers a range of tools to optimize their farming practices and improve yields.",
     image: pi,
-    link: "https://www.thepineapple.in/",
-    techStack: ["React", "Tailwind CSS", "Nodejs", "DALLE"],
+    link: "https://github.com/Abhigyan-RA/farmer-help",
+    techStack: ["React-Native", "Gen-AI", "Machine Learning", "IOT"],
   },
+
 
   {
     id: 3,
-    name: "Travel Website",
+    name: "Rooftop solar energy potential map",
     description:
-      "Developed a responsive and visually appealing travel website that showcases stunning destinations and travel experiences. The site features smooth animations, intuitive navigation, and vibrant imagery to inspire users to explore and plan their next adventure.",
-    image: travel,
-    link: "https://travel-pi-six.vercel.app/",
-    techStack: ["React", "Tailwind CSS", "Nodejs", "DALLE"],
+      "The Rooftop Solar Energy Potential Map project is a comprehensive initiative aimed at identifying and visualizing the potential for solar energy generation on rooftops within a specific geographic area. By leveraging advanced geospatial analysis and data-driven modeling, the project creates automatic solar energy consumption for the specific geographical area helping government decide where to plant solar planels",
+    image: image4,
+    link: "https://github.com/Abhigyan-RA/Rooftop-Solar-Energy-Potential-Map",
+    techStack: ["Python", "Tensorflow", "CNN","YOLOv8-seg"],
   },
   {
     id: 4,
-    name: "Road Extraction",
+    name: "LLM Fine tuning",
     description:
-      "We developed an innovative solution leveraging satellite imagery and AI techniques to automatically detect road developments and generate timely alerts. This system aimed to aid infrastructure planning and monitoring by providing accurate geographical insights",
-    image: image4,
-    link: "https://road-extraction.vercel.app/",
-    techStack: ["React", "Tailwind CSS", "Vite"],
+      "The Fine-tune-LLMplayground is a project focused on fine-tuning large language models (LLMs) using advanced techniques and frameworks like Hugging Face, DPO, and GEMINI-API. This project showcases my expertise in NLP, model optimization, and cutting-edge LLM frameworks.",
+    image: travel,
+    link: "https://github.com/Abhigyan-RA/Fine-tune-LLMplayground",
+    techStack: ["Python", "JupyterNotebook", "Unsloth", "Hugging-Face"],
   },
   {
     id: 5,
-    name: "ShopApp",
+    name: "Big Data in Data Science for Real-Time Stock Market Analysis ",
     description:
-      "I developed **ShopApp**, an e-commerce website, designed to provide a seamless shopping experience. Enabling users to browse products, add items to the cart, and manage purchases effortlessly. With state management and API integration, ShopApp ensures smooth navigation and real-time updates, making it a robust and user-friendly platform for online shopping.",
+      "Co-authored a research paper exploring the impact of big data on real-time stock market analysis. The study presents an integrated approach utilizing YOLOv5 for visual data analysis alongside traditional financial data and social media sentiment. It highlights the power of combining visual and textual data sources with machine learning models to enhance stock value prediction and decision-making. This research showcases my expertise in big data analytics, machine learning, and real-time financial applications.",
     image: image2,
-    link: "https://github.com/Yash16p/shopapp",
-    techStack: ["React", "Tailwind CSS", "Figma",],
+    link: "https://joirem.com/wp-content/uploads/journal/published_paper/volume-10/issue-11/J_xjkJ8LHh.pdf",
+    techStack: ["Python", "Machine Learning", "YOLOv5","Object Detection"],
   },
   // {
   //   id: 3,
