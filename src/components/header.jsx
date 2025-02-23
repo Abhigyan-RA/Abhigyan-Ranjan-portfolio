@@ -150,7 +150,7 @@ const Header = () => {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-md z-40">
-          <div className="fixed top-0 right-0 h-screen w-2/5 bg-black text-white z-50 shadow-lg transform transition-transform duration-300">
+          <div className="fixed top-0 right-0 h-screen w-3/4 bg-black text-white z-50 shadow-lg transform transition-transform duration-300">
             <div className="flex flex-col justify-start items-start p-8 space-y-6">
               <button
                 onClick={toggleMenu}
