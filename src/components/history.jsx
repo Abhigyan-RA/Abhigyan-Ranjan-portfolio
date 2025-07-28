@@ -2,21 +2,32 @@ import React, { useEffect, useState } from "react";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 
 const experiences = [
+    {
+    role: "AI Research Intern",
+    location: "ISRO",
+    duration: "June 2025 - Present",
+    description:
+      "Working on advanced change detection algorithms using UCDFormer and GAN-based architectures to improve satellite image interpretation and surface variation analysis for Earth observation applications."
+  },
   {
-    role: "AI/ML intern",
+    role: "AI/ML Intern",
     location: "Damco Solutions",
     duration: "February 2025 - Present",
     description:
-      "Applying advanced machine learning techniques to develop innovative solutions and deliver impactful real-world results.",
+      "Constructed and trained an object detection model achieving 96% precision and an image classification model with 99.21% accuracy, significantly reducing manual screening time for insurance claims.\n" +
+      "Developed integration scripts for the Pixtral-12B model, enhancing predictive workflow efficiency.\n" +
+      "Built an MCP server and tools to extract companies’ GitHub repositories, creating a knowledge base for IDEs like Windsurf."
   },
+
   {
     role: "AI & Backend Developer Intern",
     location: "Lagoon",
     duration: "October 2024 - January 2025",
     description:
-      "Contributed to Untitled Ventures' Lagoon, a cutting-edge recruiting platform, where I have engineered a scalable filtering system that optimizes candidate searches. By designing and implementing a resume extraction pipeline leveraging Large Language Models (LLMs) and FastAPI, I have achieved a 66.67% reduction in resume processing time. Additionally, I also worked on an advanced filtering system utilizing Node.js and Natural Language Processing (NLP)",
-  },
+      "Contributed to Untitled Ventures' Lagoon, a cutting-edge recruiting platform, where I have engineered a scalable filtering system that optimizes candidate searches. By designing and implementing a resume extraction pipeline leveraging Large Language Models (LLMs) and FastAPI, I have achieved a 66.67% reduction in resume processing time. Additionally, I also worked on an advanced filtering system utilizing Node.js and Natural Language Processing (NLP)."
+  }
 ];
+
 
 const Timeline = () => {
   const [isVisible, setIsVisible] = useState(false);
